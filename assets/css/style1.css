@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.3em;
+    font-family: "Karla";
+}
+:root{
+    --primary-color: #1E201E;
+    --secunday-color: #CD5C08;
+    --blue: #7E8EF1;
+    --mint: #78ABA8;
+    --white: #fff;
+    --black: #000;
+    --grey: #222831;
+}
+
+.padding-left-50x{
+    padding-left: 0px;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    border-bottom: 3px solid;
+    border-bottom-color: var(--secunday-color);
+    background: var(--secunday-color);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-top: 20px;
+}
+
+nav ul{
+
+    list-style: none; /*quitar el estilo de las listas*/
+    position: absolute;
+    right: 0px;
+}
+
+nav li{
+    display: inline; /*se visualicen en horizontal*/
+    padding: 25px 20px;
+    background-color: var(--primary-color);
+}
+
+nav li a{ 
+    color: var(--white);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: var(--white);
+}
+
+.servicios{
+    display: grid;
+    height: 350px;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    background-color: var(--white);
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.item-servicios{
+    border: 1px solid grey;
+    align-content: center;
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.tittle{
+    text-align: center;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.icon{
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.nosotros{
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto;
+    margin-top: 100px;
+    padding: 100px;
+    /*background-color: var(--secunday-color);*/
+    background-image: url(../images/tegnologiaoztraz.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 1000px;
+    color: var(--white);
+    padding-bottom: 10%;
+}
+
+.image{
+    width: 90%;
+    padding-left: 30px;
+    border-radius: 40px;
+}
+
+.nosotros h2{
+    color: var(--white);
+    text-transform: uppercase;
+    
+}
+
+.button{
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 14px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 40px;
+    border: 1px var(--black);
+    text-transform: uppercase;
+    
+}
+
+.contacto{
+    background-color: var(--blue);
+    font-size: 10%;
+    padding-top: 10px;   
+    display: flex;
+    text-transform: none;
+}
+
+input[type="text"], input[type="email"], input[type="tel"]{
+    width: 100%;
+    border: 1px solid var(--secunday-color);
+    color: var(--black);
+    border-radius: 10px;
+    padding: 15px 15 px;
+    font-size: 16px;
+}
+
+label{
+    color: var(--black);
+    font-size: 18px;
+    padding-bottom: 5px;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+textarea{
+    width: 80%;
+    border: 1px solid var(--secunday-color);
+    color: var(--secunday-color);
+    border-radius: 10px;
+    padding: 15px 10px;
+    font-size: 18px;
+    resize: none;
+    margin-top: 15px;
+
+}
+
+input[type="submit"]{
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    
+}
+
+.shadow{
+    background-color: var(--blue);
+}
+
+.boton{
+    margin-left: 40%;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 30px;
+    background-color: var(--blue);
+}
+
+.gatorojo{    
+    border-radius: 20%;    
+}
+
+.gatoservicio{
+    height: 25%;
+    border-radius: 20%;
+
+}
+
+.gatoempresa{
+    border-radius: 20%;
+    padding: 0%;
+}
+
+.gatocont{
+    height: 26%;
+    border-radius: 20%;
+
+}
+
+.iconredes{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    font-size: 30px;
+}
+
+.imageseo{
+    width: 20%;
+    border-radius: 2px;
+}
+
+@media only screen and (max-width: 600px){
+
+
+
+.servicios{
+    height: auto;
+    grid-template-columns: auto auto;
+}
+
+.tittle{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.servicios{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.nosotros{
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto;
+    /*padding-top: 200px;*/
+    /*background-color: var(--secunday-color);*/
+    background-image: url(../images/tegnologiaoztraz.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*height: 600px;*/
+    color: var(--white);
+    padding: 10px;
+}
+
+.nosotros h2 {
+font-size: 24px;
+text-align: center;
+}
+
+.image{
+    width: 90%;
+    margin-top: 1%;
+    padding-left: 0%;
+    border-radius: 5px;
+}
+
+.padding-left-50x{
+    width: 60%;
+    margin-top: 5%;
+
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 5px;
+}
+
+}
+@media only screen and (min-width: 720px){
+
+    .nosotros h2 {
+        text-transform: uppercase;
+        text-align: center;
+        text-transform: none;
+    }
+
+    .image{
+        height: 100%;
+        
+    }
+
+.padding-left-50x{
+    padding-left: 10%;
+}
+
+.contact1{
+    text-align: center;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
